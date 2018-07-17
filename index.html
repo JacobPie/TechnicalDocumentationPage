@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <main id="main-doc">
+  <!-- Nav -->
+  <nav class="left" id="navbar">
+    <header>
+      <h1>CSS Documentation</h1>
+    </header>
+    <a href="#Colors" class="nav-link">Colors</a>
+    <a href="#Backgrounds" class="nav-link">Backgrounds</a>
+    <a href="#Borders" class="nav-link">Borders</a>
+    <a href="#Margins" class="nav-link">Margins</a>
+    <a href="#Padding" class="nav-link">Padding</a>
+    <a href="#Height_and_Width" class="nav-link">Height and Width</a>
+    <a href="#Box_Model" class="nav-link">Box Model</a>
+    <a href="#Outline" class="nav-link">Outline</a>
+    <a href="#Text" class="nav-link">Text</a>
+    <a href="#Fonts" class="nav-link">Fonts</a>
+  </nav>
+  <!-- Info part of the page -->
+  <div class="right">
+    <!-- Colors -->
+    <section id="Colors" class="main-section">
+      <header>
+        <h2>Colors</h2>
+      </header>
+      <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. You can define the color of an element either with the background-color:</p>
+      <code>main {
+        background-color: white;
+        }
+      </code>
+      <p>Or font color with the color class</p>
+      <code>
+        main {
+        color: black;
+        }
+      </code>
+    </section>
+    <!-- Backgrounds -->
+    <section id="Backgrounds" class="main-section">
+      <header>
+        <h2>Backgrounds</h2>
+      </header>
+      <p>Backgrounds can either be an image:</p>
+      <code>
+        body {
+          background-image: url("gradient_bg.png");
+        }
+      </code>
+      <p>Or a color</p>
+      <code>
+        body {
+          background-color: green;
+        }
+      </code>
+    </section>
+    <!-- Borders -->
+    <section id="Borders" class="main-section">
+      <header>
+        <h2>Borders</h2>
+      </header>
+      <p>The CSS border properties allow you to specify the style, width, and color of an element's border.<br>The border-style property specifies what kind of border to display.</p>
+      <code>
+        #border-id {
+          border-style: solid black 2px;
+        }
+      </code>
+    </section>
+    <!-- Margins -->
+    <section id="Margins" class="main-section">
+      <header>
+        <h2>Margins</h2>
+      </header>
+      <p>The CSS margin properties are used to create space around elements, outside of any defined borders.<br>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+      <code>
+        #p-margin {
+          margin: 20px 10px 20px 10px;
+        }
+      </code>
+    </section>
+    <!-- Padding -->
+    <section id="Padding" class="main-section">
+      <header>
+        <h2>Padding</h2>
+      </header>
+      <p>
+The CSS padding properties are used to generate space around an element's content, inside of any defined borders.<br>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+      <ul>
+        <li>Padding</li>
+        <li>Padding-top</li>
+        <li>Padding-right</li>
+        <li>Padding-bottom</li>
+        <li>Padding-left</li>
+      </ul>
+      <code>
+        #p-padding {
+          padding: 5px 3px 5px 3px;
+        }
+      </code>
+    </section>
+    <!-- Height/Width -->
+    <section id="Height_and_Width" class="main-section">
+      <header>
+        <h2>Height and Width</h2>
+      </header>
+        <p>
+The height and width properties are used to set the height and width of an element.<br>The height and width can be set to auto (this is default. Means that the browser calculates the height and width), or be specified in length values, like px, cm, etc., or in percent (%) of the containing block.</p>
+        <code>
+          #main {
+            height: 95%;
+            width: 500px;
+          }
+        </code>
+      </header>
+      <p></p>
+    </section>
+    <!-- Box Model -->
+    <section id="Box_Model" class="main-section">
+      <header>
+        <h2>Box Model</h2>
+      </header>
+      <p>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.<br>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+    </section>
+    <!-- Outline -->
+    <section id="Outline" class="main-section">
+      <header>
+        <h2>Outline</h2>
+      </header>
+      <p>An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".</p>
+      <code>
+        #border {
+          border: 10px black solid; 
+        }
+      </code>
+    </section>
+    <!-- Text -->
+    <section id="Text" class="main-section">
+      <header>
+        <h2>Text</h2>
+      </header>
+      <p>The text-align property is used to set the horizontal alignment of a text.<br>A text can be left or right aligned, centered, or justified.<br>The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):</p>
+      <code>
+        h1 {
+          text-align: center;
+        }
+      </code>
+      <code>
+        h2 {
+          text-align: left;
+        }
+      </code>
+      <code>
+        h3 {
+          text-align: right;
+        }
+      </code>
+    </section>
+    <!-- Fonts -->
+    <section id="Fonts" class="main-section">
+      <header>
+        <h2>Fonts</h2>
+      </header>
+      <p>The CSS font properties define the font family, boldness, size, and the style of a text.</p>
+      <code>
+        p {
+          font-family: "Times New Roman", Times, serif;
+        }
+      </code>
+    </section>
+  </div>
+</main>
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="">
